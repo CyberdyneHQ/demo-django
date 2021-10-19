@@ -1,6 +1,16 @@
 version = 1
 
 [[analyzers]]
+name = "docker"
+enabled = true
+
+  [analyzers.meta]
+  dockerfile_paths = [
+    "hello",
+    "world"
+  ]
+
+[[analyzers]]
 name = "python"
 enabled = true
 
